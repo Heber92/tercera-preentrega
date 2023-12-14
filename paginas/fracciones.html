@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fracciones</title>
+    <link rel="stylesheet" href="../SCSS/main.css">
+     <!--Bootstrap CSS-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header id="encabezado-scss">
+        <div class="encabezado-img"><img class="img-encabezado" src="../img/encabezado-fracciones.jpg" alt="Encabezado de Matematicas"></div>
+        <div class="titulo-encabezado">
+            <h1 id="titulo-h1">Fracciones</h1>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-sm bg-body-tertiary" id="menu">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="../index.html">Inicio</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./operacionesbasicas.html">Operaciones Basicas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./areasyperimetros.html">Areas y Perimetros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./tablasdemultiplicar.html">Tablas de Multiplicar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contenido-fraccion">
+            <div class="fraccion">
+                <img src="../img/fraccion-img.jpg" alt="Que es una Fraccion">
+                <h2>Que es una Fraccion?</h2>
+                <p>Una Fraccion es un numero, que se obtiene al dividir un entero en partes iguales. <br>
+                Una fraccion se respresenta matematicamente por numeros que estan escritos uno sobre otro y que se hallan separado por una linea recta horizontal llamada raya fraccionaria. <br> La fraccion esta formada por dos terminos: el numerador es el numero que esta sobre la raya fraccionaria y el denominador es el que esta abajo de la raya fraccionaria. <br>
+                El NUMERADOR es el numero de partes que se considera de la unidad total. <br>El DENOMIDADOR es el numero de partes iguales en que se ha dividido la unidad o total.</p>
+            </div>
+            <!-- OPERACION SUMA -->
+            <div class="suma-fraccion">
+                <h2 id="fr-suma">Suma de Fraccion</h2>
+                <img src="../img/fraccion-suma.png" alt="Formula para resolver suma de Fraccion">
+                <h3>Primera Fraccion</h3>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Numerador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="f1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Denominador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="f2">
+                    </div>
+                </div>
+                <h3>Segunda Fraccion</h3>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Numerador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="f3">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Denominador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="f4">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-primary col-5 mt-2" id="bfs">Resultado</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-primary col-4 col-md-6" id="rfs" role="alert">
+                    </div>
+                </div>
+            </div>
+            <!-- OPERACION RESTA -->
+            <div class="resta-fraccion">
+                <h2 id="fr-resta">Resta de Fraccion</h2>
+                <img src="../img/fraccion-resta.png" alt="Formula para resolver suma de Fraccion">
+                <h3>Primera Fraccion</h3>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Numerador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="fr1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Denominador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="fr2">
+                    </div>
+                </div>
+                <h3>Segunda Fraccion</h3>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Numerador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="fr3">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Denominador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="fr4">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-success col-5 mt-2" id="bfr">Resultado</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-success col-4 col-md-6" id="rfr" role="alert">
+                    </div>
+                </div>
+            </div>
+            <!-- OPERACION MULTIPLICACION -->
+            <div class="multiplicacion-fraccion">
+                <h2 id="fr-multiplicacion">Multiplicacion de Fraccion</h2>
+                <img src="../img/fraccion-multiplicacion.png" alt="Formula para resolver suma de Fraccion">
+                <h3>Primera Fraccion</h3>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Numerador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="fra1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Denominador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="fra2">
+                    </div>
+                </div>
+                <h3>Segunda Fraccion</h3>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Numerador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="fra3">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Denominador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="fra4">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-info col-5 mt-2" id="bfm">Resultado</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-info col-4 col-md-6" id="rfm" role="alert">
+                    </div>
+                </div>
+            </div>
+            <!-- OPERACION DIVISION -->
+            <div class="multiplicacion-fraccion">
+                <h2>Division de Fraccion</h2>
+                <img src="../img/fraccion-division.png" alt="Formula para resolver suma de Fraccion">
+                <h3>Primera Fraccion</h3>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Numerador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="frac1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Denominador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="frac2">
+                    </div>
+                </div>
+                <h3>Segunda Fraccion</h3>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Numerador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="frac3">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Denominador:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="frac4">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-warning col-5 mt-2" id="bfd">Resultado</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-warning col-4 col-md-6" id="rfd" role="alert">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="fin-operacionesbasicas">
+        <ul class="fin-ul">
+            <li><a href="#titulo-h1">Menu</a></li>
+            <li><a href="#fr-suma">Suma de Fraccion</a></li>
+            <li><a href="#fr-resta">Resta de Fraccion</a></li>
+            <li><a href="#fr-multiplicacion">Multiplicacion de Fraccion</a></li>
+        </ul>
+        </div>
+    </footer>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!--JavaScrip-->
+    <script src="../js/fraccion.js"></script>
+</body>
+</html>

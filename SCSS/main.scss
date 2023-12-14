@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+// ENCABEZADO-INDEX
+#encabezado-scss{
+    width: 100%;
+    height: auto;
+    
+    .img-encabezado{
+        width: 100%;
+        height: auto;
+    }
+    .titulo-encabezado{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-color: #ffe375;
+    }
+}
+// CONTENIDO-INDEX
+#contenido-scss{
+    text-align: center;
+    .contenido-link{
+        text-decoration: none;
+        color: black;
+    }
+    .contenido-link h2{
+        font-size: 1cm;
+    }
+    .contenido-link h4{
+        font-size: 6mm;
+        padding: 5mm;
+    }
+    .contenido-img{
+        width: auto;
+        height: 5cm;
+        margin: .5cm;
+    }
+    // OPERACIONESBASICAS-DIV-INDEX
+    .operacionesbasicas-div{
+        background-color: #e96a6a;
+    }
+    @media(hover: hover){
+        .operacionesbasicas-div:hover{
+            // background-color: #05a89f;
+            border: solid 3px;
+        }
+        .operacionesbasicas-div:hover .contenido-img{
+            transform: scale(1.1);
+        }
+    }
+    @media (max-width: 430px) {
+        .operacionesbasicas-div{
+            background-color: #05a89f;  
+        }
+    }
+    // FRACCIONES-DIV.INDEX
+    .fracciones-div{
+        background-color: #72bc5d;
+    }
+    @media(hover: hover){
+        .fracciones-div:hover{
+            // background-color:#fbb03c;
+            border: solid 3px;
+        }
+        .fracciones-div:hover .contenido-img{
+            transform: scale(1.1);
+        }
+    }
+    @media (max-width: 430px) {
+        .fracciones-div{
+            background-color:#fbb03c;  
+        }
+    }
+    // AREASYPERIMETROS-DIV-INDEX
+    .areasyperimetros-div{
+        background-color: #fbb03c;
+    }
+    @media(hover: hover){
+        .areasyperimetros-div:hover{
+            // background-color:#72bc5d;
+            border: solid 3px;
+        }
+        .areasyperimetros-div:hover .contenido-img{
+            transform: scale(1.1);
+        }
+    }
+    @media (max-width: 430px) {
+        .areasyperimetros-div{
+            background-color:#72bc5d;  
+        }
+    }
+    // TABLAS-DIV-INDEX
+    .tablas-div{
+        background-color: #05a89f;
+    }
+    @media(hover: hover){
+        .tablas-div:hover{
+            // background-color:#e96a6a;
+            border: solid 3px;
+        }
+        .tablas-div:hover .contenido-img{
+            transform: scale(1.1);
+        }
+    }
+    @media (max-width: 430px) {
+        .tablas-div{
+            background-color:#e96a6a;  
+        }
+    }
+    // TAMAÑO DE IMAGEN 430PX
+    @media (max-width:430px){
+        .contenido-img{
+            min-width: 50%;
+            border-radius: 50%;
+        }
+        .fraciones-contenido{
+            width: 300px;
+        }
+    }
+}
+// PIE DE PAGINA-INDEX
+footer{
+    background-color: #ffe375;
+    .piedepagina h3{
+        text-align: center;
+        font-size: 1cm;
+    }
+    .piedepagina p{
+        text-align: center;
+        font-size: 6mm;
+        padding: 5mm;
+    }
+}
+#fin-operacionesbasicas{
+    text-align: center;
+    .fin-ul li{
+        list-style: none;
+    }
+    .fin-ul a{
+        color: black;
+    }
+}
+// PRIMERA PAGINA OPERACIONES BASICAS
+#contenido-operacionesbasicas{
+    background-color:#e96a6a;
+    text-align: center;
+    // margin: 20px;
+    // padding: 10px 0;
+}
+// SEGUNDA PAGINA FRACCIONES
+#contenido-fraccion{
+    background-color:#72bc5d;
+    text-align: center;
+    // margin: 20px;
+    // padding: 10px 0;
+
+    @media (max-width:430px){
+        img{
+            width: 80%;
+            height: auto;
+        }
+        img{
+            width: 80%;
+            height: auto;
+        }
+    }
+    @media (min-width:431px){
+        img{
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+        img{
+            width: 80%;
+            height: auto;
+            text-align: center;
+        }
+    }
+}
+// TERCERA PAGINA AREAS Y PERIMETROS
+#areasyperimetros{
+    background-color: #fbb03c;
+    text-align: center;
+}
+//CUARTA PAGINA TABLAS DE MULTIPLICAR
+#tablasdemultiplicar{
+    gap: 20px;
+    background-color: #05a89f;
+    padding: 20px;
+
+}
+#tablasdemultiplicar div{
+    display: grid;
+    padding: 10px;
+    text-align: center;
+    ul{
+        list-style: none;
+    }
+}
+.tablaimpar{
+    background-color: #e96a6a;
+}
+.tablapar{
+    background-color: #fbb03c;
+}
+.diez{
+    background-color: #fbb03c;
+    grid-column: 2/3;
+}
+@media (max-width:430px){
+    #tablasdemultiplicar{
+        display: block;
+    }
+    ul{
+        font-size: 25px;
+    }
+    .tablaimpar .input-tablas + ul.tablas{
+        display: none;
+    }
+    .tablaimpar input:checked + ul.tablas{
+        display: block;
+    }
+    .tablapar .input-tablas + ul.tablas{
+        display: none;
+    }
+    .tablapar input:checked + ul.tablas{
+        display: block;
+    }
+}
+@media (min-width:431px){
+    #tablasdemultiplicar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;;
+    }
+    ul{
+        font-size: 20px;
+    }
+    .input-tablas{
+        display: none;
+    }
+}
+@media (min-width:950px){
+    #tablasdemultiplicar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

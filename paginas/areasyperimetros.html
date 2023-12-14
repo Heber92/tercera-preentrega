@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas y Peerimetros</title>
+    <link rel="stylesheet" href="../SCSS/main.css">
+     <!--Bootstrap CSS-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header id="encabezado-scss">
+        <div class="encabezado-img"><img class="img-encabezado" src="../img/encabezado-areasyperimetros.jpg" alt="Encabezado de Matematicas"></div>
+        <div class="titulo-encabezado">
+            <h1 id="titulo-h1">Areas y Perimetros</h1>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-sm bg-body-tertiary" id="menu">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="../index.html">Inicio</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./operacionesbasicas.html">Operaciones Basicas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./fracciones.html">Fracciones</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./tablasdemultiplicar.html">Tablas de Multiplicar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="areasyperimetros">
+            <!-- CUADRADO -->
+            <div class="cuadrado-contenido">
+                <h2 id="cuadrado">Cuadrado</h2>
+                <img src="../img/ayp-cuadrado.png" alt="Imagen de un Cuadrado">
+                <h3>Que es un Cuadrado?</h3>
+                <p>Es un poligono de cuatro lados iguales que describen angulos rectos entre si.</p>
+                <h2>Formula del Cuadrado</h2>
+                <h3>Area</h3>
+                <p>Base * Altura</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Base:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Altura:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-primary col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-primary col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+                <h3>Perimetro</h3>
+                <p>Lado * 4</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Lado:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-primary col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-primary col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+            </div>
+            <!-- TRIANGULO -->
+            <div class="triangulo-contenido">
+                <h2 id="triangulo">Triangulo</h2>
+                <img src="../img/ayp-triangulo.png" alt="Imagen de un Triangulo">
+                <h3>Que es un Triangulo?</h3>
+                <p>Es una figura plana que contiene tres lados. El tamaño de los lados y los angulos que describen pueden variar lo que nos lleva a diferentes tipos de triangulos.
+                </p>
+                <h2>Formula del Triangulo</h2>
+                <h3>Area</h3>
+                <p>(Base * Altura)/2</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Base:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Altura:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-secondary col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-secondary col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+                <h3>Perimetro</h3>
+                <p>Lado * 3</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Lado:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-secondary col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-secondary col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+            </div>
+            <!-- RECTANGULO -->
+            <div class="rectangulo-contenido">
+                <h2 id="rectangulo">Rectangulo</h2>
+                <img src="../img/ayp-rectangulo.png" alt="Imagen de un Rectangulo">
+                <h3>Que es un Rectangulo?</h3>
+                <p>Es un poligono similar al cuadrado, pero dos de los lados son paralelos entre si y son mas largos que los otros dos.</p>
+                <h2>Formula del Rectangulo</h2>
+                <h3>Area</h3>
+                <p>Base * Altura</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Base:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Altura:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-success col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-success col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+                <h3>Perimetro</h3>
+                <p>Lado * 4</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Lado:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-success col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-success col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+            </div>
+            <!-- ROMBO -->
+            <div class="rombo-contenido">
+                <h2 id="rombo">Rombo</h2>
+                <img src="../img/ayp-rombo.jpg" alt="Imagen de un Rombo">
+                <h3>Que es un Rombo?</h3>
+                <p>Es un poligono de cuatro lafos iguales y con angulos opuestos iguales.
+                </p>
+                <h2>Formula del Rombo</h2>
+                <h3>Area</h3>
+                <p>(Diametro Mayor * Diametro Menor)/2</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Diametro Mayor:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Diametro Menor:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-danger col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-danger col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+                <h3>Perimetro</h3>
+                <p>Lado * 4</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Lado:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-danger col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-danger col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+            </div>
+            <!-- ROMBOIDE -->
+            <div class="romboide-contenido">
+                <h2 id="romboide">Romboide</h2>
+                <img src="../img/ayp-romboide.png" alt="Imagen de un Romboide">
+                <h3>Que es un Romboide?</h3>
+                <p>Similar al rombo pero solo los lados opuestos son iguales entre si.
+                </p>
+                <h2>Formula del Romboide</h2>
+                <h3>Area</h3>
+                <p>Base * Altura</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Base:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Altura:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-info col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-info col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+                <h3>Perimetro</h3>
+                <p>Lado * 4</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Lado:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-info col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-info col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+            </div>
+            <!-- TRAPECIO -->
+            <div class="trapecio-contenido">
+                <h2 id="trapecion">Trapecio</h2>
+                <img src="../img/ayp-trapecio.png" alt="Imagen de un Trapecio">
+                <h3>Que es un Trapecio?</h3>
+                <p>Es una figura geometrica de cuatro lados que posee dos lados paralelos de diferente tamaño y dos son paralelos que pueden ser del mismo tamaño.
+                </p>
+                <h2>Formula del Trapecio</h2>
+                <h3>Area</h3>
+                <p>((Base Mayor + Base Menor)Altura)/2</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Base:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Altura:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-light col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-light col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+                <h3>Perimetro</h3>
+                <p>Lado + Lado + Lado * Lado</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Lado:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-light col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-light col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+            </div>
+            <!-- POLIGONO -->
+            <div class="poligono-contenido">
+                <h2 id="poligono">Poligono</h2>
+                <img src="../img/ayp-poligono.png" alt="Imagen de un Poligono">
+                <h3>Que es un Triangulo?</h3>
+                <p>EUn poligo esta conformado por 5 o mas lados.
+                </p>
+                <h2>Formula del Triangulo</h2>
+                <h3>Area</h3>
+                <p>(Base * Apotema)/2</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Base:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Apotema:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-dark col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-dark col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+                <h3>Perimetro</h3>
+                <p>Lado * Numero de Lados</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Lado:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Numero de Lados:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-dark col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-dark col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+            </div>
+            <!-- CIRCULO -->
+            <div class="circulo">
+                <h2>Circulo</h2>
+                <img src="../img/ayp-circulo.png" alt="Imagen de un Circulo">
+                <h3>Que es un Circulo?</h3>
+                <p>Es una forma redondeada que en teoria contiene un numero infinito de puntos esquis distante respecto al centro de la figura.
+                </p>
+                <h2>Formula del Circulo</h2>
+                <h3>Area</h3>
+                <p>π * r²</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Radio:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n1">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-primary col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-primary col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+                <h3>Perimetro</h3>
+                <p>π * d</p>
+                <div class="row justify-content-center">
+                    <label class="col-4 col-form-label">Diametro:</label>
+                    <div class="col-8 col-md-4">
+                        <input type="number" class="form-control1 col-4" id="n2">
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4">
+                        <button class="btn btn-primary col-5 mt-2" id="sumar">Respuesta</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="alert alert-primary col-4 col-md-6" id="resultadosuma" role="alert">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="fin-operacionesbasicas">
+        <ul class="fin-ul">
+            <li><a href="#titulo-h1">Menu</a></li>
+            <li><a href="#cuadrado">Cuadrado</a></li>
+            <li><a href="#triagulo">Triangulo</a></li>
+            <li><a href="#rectangulo2">Rectangulo</a></li>
+            <li><a href="#rombo">Rombo</a></li>
+            <li><a href="#romboide">Romboide</a></li>
+            <li><a href="#trapecio">Trapecio</a></li>
+            <li><a href="#poligono">Poligono</a></li>
+        </ul>
+        </div>
+    </footer>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!--JavaScrip-->
+    <script src="../js/operaciones.js"></script>
+</body>
+</html>
