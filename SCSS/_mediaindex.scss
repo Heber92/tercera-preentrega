@@ -1,0 +1,164 @@
+//CONTENIDO INDEX
+#contenido-scss{
+    text-align: center;
+}
+
+.contenido-link{
+    text-decoration: none;
+    color: black;
+}
+.contenido-link h2{
+    font-size: 1cm;
+}
+.contenido-link h4{
+    font-size: 6mm;
+    padding: 5mm;
+}
+.contenido-img{
+    width: auto;
+    height: 5cm;
+    margin: .5cm;
+}
+// OPERACIONESBASICAS-DIV-INDEX
+.operacionesbasicas-div{
+    background-color: #e96a6a;
+}
+@media(hover:hover){
+    .operacionesbasicas-div:hover{
+        border: solid 3px;
+    }
+    .operacionesbasicas-div:hover .contenido-img{
+        transform: scale(1.1);
+    }
+}
+@media (max-width:$movile) {
+    .operacionesbasicas-div{
+        background:radial-gradient(white,#05a89f); 
+    }
+}
+// FRACCIONES-DIV.INDEX
+.fracciones-div{
+    background-color: #72bc5d;
+}
+@media(hover: hover){
+    .fracciones-div:hover{
+        // background-color:#fbb03c;
+        border: solid 3px;
+    }
+    .fracciones-div:hover .contenido-img{
+        transform: scale(1.1);
+    }
+}
+@media (max-width:$movile) {
+    .fracciones-div{
+        background:radial-gradient(white,#fbb03c);  
+    }
+}
+// AREASYPERIMETROS-DIV-INDEX
+.areasyperimetros-div{
+    background-color: #fbb03c;
+}
+@media(hover: hover){
+    .areasyperimetros-div:hover{
+        border: solid 3px;
+    }
+    .areasyperimetros-div:hover .contenido-img{
+        transform: scale(1.1);
+    }
+}
+@media (max-width:$movile) {
+    .areasyperimetros-div{
+        background:radial-gradient(white,#72bc5d);  
+    }
+}
+// TABLAS-DIV-INDEX
+.tablas-div{
+    background-color: #05a89f;
+}
+@media(hover: hover){
+    .tablas-div:hover{
+        border: solid 3px;
+    }
+    .tablas-div:hover .contenido-img{
+        transform: scale(1.1);
+    }
+}
+@media (max-width:$movile) {
+    .tablas-div{
+        background:radial-gradient(white,#e96a6a);  
+    }
+}
+// TAMAÑO DE IMAGEN 430PX
+@media (max-width:$movile){
+    .contenido-img{
+        min-width: 50%;
+        border-radius: 50%;
+    }
+    .fraciones-contenido{
+        width: 300px;
+    }
+}
+
+//SEGUNDA PAGINA FRACCIONES
+@media (max-width:$movile){
+    img{
+        width: 80%;
+        height: auto;
+    }
+    img{
+        width: 80%;
+        height: auto;
+    }
+}
+@media (min-width:431px){
+    img{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    img{
+        width: 80%;
+        height: auto;
+        text-align: center;
+    }
+}
+
+//CUARTA PAGINA TABLAS DE MULTIPLICAR
+@media (max-width:$movile ){
+    #tablasdemultiplicar{
+        display: block;
+    }
+    ul{
+        font-size: 25px;
+    }
+    .tablaimpar .input-tablas + ul.tablas{
+        display: none;
+    }
+    .tablaimpar input:checked + ul.tablas{
+        display: block;
+    }
+    .tablapar .input-tablas + ul.tablas{
+        display: none;
+    }
+    .tablapar input:checked + ul.tablas{
+        display: block;
+    }
+}
+@media (min-width:431px){
+    #tablasdemultiplicar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;;
+    }
+    ul{
+        font-size: 20px;
+    }
+    .input-tablas{
+        display: none;
+    }
+}
+@media (min-width:950px){
+    #tablasdemultiplicar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

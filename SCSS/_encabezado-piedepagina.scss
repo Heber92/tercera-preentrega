@@ -1,0 +1,39 @@
+// ENCABEZADO-INDEX
+#encabezado-scss{
+    width: 100%;
+    height: auto;
+    
+    .img-encabezado{
+        width: 100%;
+        height: auto;
+    }
+    .titulo-encabezado{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-color:#ffe375;
+    }
+}
+
+// PIE DE PAGINA-INDEX
+footer{
+    background-color: #ffe375;
+    .piedepagina h3{
+        text-align: center;
+        font-size: 1cm;
+    }
+    .piedepagina p{
+        text-align: center;
+        font-size: 6mm;
+        padding: 5mm;
+    }
+}
+#fin-paginas{
+    text-align: center;
+    .fin-ul li{
+        list-style: none;
+    }
+    .fin-ul a{
+        color: black;
+    }
+}

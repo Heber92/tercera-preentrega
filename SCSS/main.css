@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 #encabezado-scss {
   width: 100%;
   height: auto;
@@ -18,99 +13,6 @@
   background-color: #ffe375;
 }
 
-#contenido-scss {
-  text-align: center;
-}
-#contenido-scss .contenido-link {
-  text-decoration: none;
-  color: black;
-}
-#contenido-scss .contenido-link h2 {
-  font-size: 1cm;
-}
-#contenido-scss .contenido-link h4 {
-  font-size: 6mm;
-  padding: 5mm;
-}
-#contenido-scss .contenido-img {
-  width: auto;
-  height: 5cm;
-  margin: 0.5cm;
-}
-#contenido-scss .operacionesbasicas-div {
-  background-color: #e96a6a;
-}
-@media (hover: hover) {
-  #contenido-scss .operacionesbasicas-div:hover {
-    border: solid 3px;
-  }
-  #contenido-scss .operacionesbasicas-div:hover .contenido-img {
-    transform: scale(1.1);
-  }
-}
-@media (max-width: 430px) {
-  #contenido-scss .operacionesbasicas-div {
-    background-color: #05a89f;
-  }
-}
-#contenido-scss .fracciones-div {
-  background-color: #72bc5d;
-}
-@media (hover: hover) {
-  #contenido-scss .fracciones-div:hover {
-    border: solid 3px;
-  }
-  #contenido-scss .fracciones-div:hover .contenido-img {
-    transform: scale(1.1);
-  }
-}
-@media (max-width: 430px) {
-  #contenido-scss .fracciones-div {
-    background-color: #fbb03c;
-  }
-}
-#contenido-scss .areasyperimetros-div {
-  background-color: #fbb03c;
-}
-@media (hover: hover) {
-  #contenido-scss .areasyperimetros-div:hover {
-    border: solid 3px;
-  }
-  #contenido-scss .areasyperimetros-div:hover .contenido-img {
-    transform: scale(1.1);
-  }
-}
-@media (max-width: 430px) {
-  #contenido-scss .areasyperimetros-div {
-    background-color: #72bc5d;
-  }
-}
-#contenido-scss .tablas-div {
-  background-color: #05a89f;
-}
-@media (hover: hover) {
-  #contenido-scss .tablas-div:hover {
-    border: solid 3px;
-  }
-  #contenido-scss .tablas-div:hover .contenido-img {
-    transform: scale(1.1);
-  }
-}
-@media (max-width: 430px) {
-  #contenido-scss .tablas-div {
-    background-color: #e96a6a;
-  }
-}
-@media (max-width: 430px) {
-  #contenido-scss .contenido-img {
-    min-width: 50%;
-    border-radius: 50%;
-  }
-  #contenido-scss .fraciones-contenido {
-    width: 300px;
-  }
-}
-
 footer {
   background-color: #ffe375;
 }
@@ -124,81 +26,139 @@ footer .piedepagina p {
   padding: 5mm;
 }
 
-#fin-operacionesbasicas {
+#fin-paginas {
   text-align: center;
 }
-#fin-operacionesbasicas .fin-ul li {
+#fin-paginas .fin-ul li {
   list-style: none;
 }
-#fin-operacionesbasicas .fin-ul a {
+#fin-paginas .fin-ul a {
   color: black;
 }
 
-#contenido-operacionesbasicas {
-  background-color: #e96a6a;
+#contenido-scss {
   text-align: center;
 }
 
-#contenido-fraccion {
-  background-color: #72bc5d;
-  text-align: center;
+.contenido-link {
+  text-decoration: none;
+  color: black;
+}
+
+.contenido-link h2 {
+  font-size: 1cm;
+}
+
+.contenido-link h4 {
+  font-size: 6mm;
+  padding: 5mm;
+}
+
+.contenido-img {
+  width: auto;
+  height: 5cm;
+  margin: 0.5cm;
+}
+
+.operacionesbasicas-div {
+  background-color: #e96a6a;
+}
+
+@media (hover: hover) {
+  .operacionesbasicas-div:hover {
+    border: solid 3px;
+  }
+  .operacionesbasicas-div:hover .contenido-img {
+    transform: scale(1.1);
+  }
 }
 @media (max-width: 430px) {
-  #contenido-fraccion img {
+  .operacionesbasicas-div {
+    background: radial-gradient(white, #05a89f);
+  }
+}
+.fracciones-div {
+  background-color: #72bc5d;
+}
+
+@media (hover: hover) {
+  .fracciones-div:hover {
+    border: solid 3px;
+  }
+  .fracciones-div:hover .contenido-img {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 430px) {
+  .fracciones-div {
+    background: radial-gradient(white, #fbb03c);
+  }
+}
+.areasyperimetros-div {
+  background-color: #fbb03c;
+}
+
+@media (hover: hover) {
+  .areasyperimetros-div:hover {
+    border: solid 3px;
+  }
+  .areasyperimetros-div:hover .contenido-img {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 430px) {
+  .areasyperimetros-div {
+    background: radial-gradient(white, #72bc5d);
+  }
+}
+.tablas-div {
+  background-color: #05a89f;
+}
+
+@media (hover: hover) {
+  .tablas-div:hover {
+    border: solid 3px;
+  }
+  .tablas-div:hover .contenido-img {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 430px) {
+  .tablas-div {
+    background: radial-gradient(white, #e96a6a);
+  }
+}
+@media (max-width: 430px) {
+  .contenido-img {
+    min-width: 50%;
+    border-radius: 50%;
+  }
+  .fraciones-contenido {
+    width: 300px;
+  }
+}
+@media (max-width: 430px) {
+  img {
     width: 80%;
     height: auto;
   }
-  #contenido-fraccion img {
+  img {
     width: 80%;
     height: auto;
   }
 }
 @media (min-width: 431px) {
-  #contenido-fraccion img {
+  img {
     width: 100%;
     height: auto;
     text-align: center;
   }
-  #contenido-fraccion img {
+  img {
     width: 80%;
     height: auto;
     text-align: center;
   }
 }
-
-#areasyperimetros {
-  background-color: #fbb03c;
-  text-align: center;
-}
-
-#tablasdemultiplicar {
-  gap: 20px;
-  background-color: #05a89f;
-  padding: 20px;
-}
-
-#tablasdemultiplicar div {
-  display: grid;
-  padding: 10px;
-  text-align: center;
-}
-#tablasdemultiplicar div ul {
-  list-style: none;
-}
-
-.tablaimpar {
-  background-color: #e96a6a;
-}
-
-.tablapar {
-  background-color: #fbb03c;
-}
-
-.diez {
-  background-color: #fbb03c;
-  grid-column: 2/3;
-}
-
 @media (max-width: 430px) {
   #tablasdemultiplicar {
     display: block;
@@ -236,4 +196,51 @@ footer .piedepagina p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#contenido-operacionesbasicas {
+  background-color: #e96a6a;
+  text-align: center;
+}
+
+#contenido-fraccion {
+  background-color: #72bc5d;
+  text-align: center;
+}
+
+#areasyperimetros {
+  background-color: #fbb03c;
+  text-align: center;
+}
+
+#tablasdemultiplicar {
+  gap: 20px;
+  background-color: #05a89f;
+  padding: 20px;
+}
+
+#tablasdemultiplicar div {
+  display: grid;
+  padding: 10px;
+  text-align: center;
+}
+#tablasdemultiplicar div ul {
+  list-style: none;
+}
+
+.tablaimpar {
+  background-color: #e96a6a;
+}
+
+.tablapar {
+  background-color: #fbb03c;
+}
+
+.diez {
+  background-color: #fbb03c;
+  grid-column: 2/3;
 }/*# sourceMappingURL=main.css.map */
