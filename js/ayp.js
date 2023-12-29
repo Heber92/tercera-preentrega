@@ -53,12 +53,12 @@ function ptriangulo(){
     rpt.innerHTML=`El perimetro del triangolo es: ${perimetro}`;
 }
 //RECTANGULO
-let bar = document.getElementById("bar");
-let rar = document.getElementById("rar");
-let bpr = document.getElementById("bpr");
-let rpr = document.getElementById("rpr");
+let barectangulo = document.getElementById("barectangulo");
+let rarectangulo = document.getElementById("rarectangulo");
+let bprectangulo = document.getElementById("bprectangulo");
+let rprectangulo = document.getElementById("rprectangulo");
 
-bar.addEventListener("click",arectangulo);
+barectangulo.addEventListener("click",arectangulo);
 
  function arectangulo(){
     let base=parseFloat(document.getElementById("br1").value);
@@ -66,21 +66,20 @@ bar.addEventListener("click",arectangulo);
 
     let area=base*altura;
 
-    rar.innerHTML=`El area del Rectangulo es: ${area}`;
+    rarectangulo.innerHTML=`El area del Rectangulo es: ${area}`;
  }
+bprectangulo.addEventListener("click",prectangulo1)
 
- bpr.addEventListener("click",prectangulo);
+function prectangulo1(){
+    let lado1 = parseFloat(document.getElementById("pr1").value);
+    let lado2 = parseFloat(document.getElementById("pr2").value);
 
-function prectangulo(){
-    let lado1=parseFloat(document.getElementById("lr1").value);
-    let lado2=parseFloat(document.getElementById("lr2").value);
+    let perimetro = (lado1*2) + (lado2*2);
 
-    let perimetro1 = lado1*2;
-    let perimetro2 = lado2*2;
-    let perf = perimetro1 + perimetro2;
-
-    rpr.innerHTML=`El perimetro del triangolo es: ${perf}`;
+    rprectangulo.innerHTML=`El perimetro del Rectangulo es: ${perimetro}`;
 }
+
+
 //ROMBO
 let barombo = document.getElementById("barombo");
 let rarombo = document.getElementById("rarombo");
